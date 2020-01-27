@@ -30,13 +30,25 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> Initial commit
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+<<<<<<< HEAD
     'django.contrib.staticfiles'
+=======
+    'django.contrib.staticfiles',
+    'rest_framework',
+    'horreum.apps.authentication',
+
+>>>>>>> Initial commit
 ]
 
 MIDDLEWARE = [
@@ -103,6 +115,19 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+<<<<<<< HEAD
+=======
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        
+    ),
+}
+
+>>>>>>> Initial commit
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -122,3 +147,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
+=======
+AUTH_USER_MODEL = 'authentication.User'
+>>>>>>> Initial commit
