@@ -1,5 +1,7 @@
 install:
 	pipenv install
+	pip3 install coveralls
+
 
 uninstall:
 	pipenv uninstall
