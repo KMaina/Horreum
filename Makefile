@@ -1,6 +1,7 @@
 install:
 	pipenv install
 
+
 uninstall:
 	pipenv uninstall
 
