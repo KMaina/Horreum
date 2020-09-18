@@ -27,3 +27,6 @@ isort:
 
 collectstatic:
 	python manage.py collectstatic
+
+shell:
+	python3 manage.py shell
