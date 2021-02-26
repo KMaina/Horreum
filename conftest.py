@@ -1,8 +1,12 @@
 import pytest
 import rest_framework
 
+pytest_plugins = (
+    "horreum.tests.fixtures.users",
+    "horreum.tests.fixtures.products"
+)
 
 @pytest.fixture
-def api_client():
+def client():
     from rest_framework.test import APIClient
     return APIClient()

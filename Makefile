@@ -5,16 +5,22 @@ uninstall:
 	pipenv uninstall
 
 migrations:
-	python3 manage.py makemigrations
+	python manage.py makemigrations
 
 migrate:
-	python3 manage.py migrate
+	python manage.py migrate
 
 serve:
-	python3 manage.py runserver
+	python manage.py runserver
 
 superuser:
 	python manage.py createsuperuser
+
+shell:
+	python manage.py shell
+
+shell_plus:
+	python manage.py shell_plus
 
 flake8:
 	pipenv run flake8
