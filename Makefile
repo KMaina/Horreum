@@ -13,6 +13,15 @@ migrate:
 serve:
 	python manage.py runserver
 
+run:
+	docker-compose up
+
+kill:
+	docker-compose down
+
+tests:
+	docker-compose run web pytest
+
 superuser:
 	python manage.py createsuperuser
 

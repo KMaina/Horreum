@@ -15,5 +15,4 @@ class TestProductCrud:
         client.credentials(HTTP_AUTHORIZATION='Bearer ' + token)
         url = reverse('products:product-list')
         response = client.post(url, product)
-        # import pdb; pdb.set_trace()
         assert response.status_code == status.HTTP_201_CREATED
